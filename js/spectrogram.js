@@ -101,7 +101,7 @@ function Spectrogram(filename, selector, options = {}) {
 
     // this.sampleRate = 256;
     this.sampleRate = options.sampleSize || 512;
-    this.decRange = [-80.0, 80.0];
+    this.decRange = options.decRange || [-80.0, 80.0];
 
     this.width = options.width || 900;
     this.height = options.height || 440;
